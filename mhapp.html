@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pos+</title>
+         <link type="text/css" href="mhapp.css" rel="stylesheet" />
+         <script src="mhapp.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="sign-in">
+            <fieldset>
+                <h1 id="welcome">WELCOME TO POS+</h1>
+                <p class="sub">a positivity journal for those struggling with mental illness</p>
+                <input type="text" placeholder="Username" size=10 />
+                <input type="password" placeholder="Password" size=10 />
+                <button id="enter">ENTER</button>
+            </fieldset>
+        </div>
+        <div id="how-are-you" class="hidden">
+            <h2>POS+</h2>
+            <h1>Hey Jenny, <br />how are you doing today?</h1>
+            <p class="sub">(choose an emoticon below)</p>
+            <div id="emotion-stickers">
+                <img class="good" src="really-happy.png" alt="happy" />
+                <img class="good" src="happy.png" alt="neutral" />
+                <img class="good" src="okay.png" alt="angry" />
+                <img class="bad" src="sad.png" alt="sad" />
+                <img class="bad" src="really-sad.png" alt="sad" />
+            </div>
+        </div>
+        <div id="positives" class="hidden">
+            <h2>POS+</h2>
+            <h1 id="bad-day" class="hidden">
+                Can you think of at least <span class="underline">one</span> positive event that happened today?
+            </h1>
+            <h1 id="good-day">What are <span class="underline">three</span> positive events that happened today?</h1>
+            <p id="good-day-sub" class="sub">(It's okay if you can't think of three! Try to think of at least one!)</p>
+            <p id="bad-day-sub" class="sub hidden">(If you can't, that's okay!)</p>
+            <div id="positive-events">
+                <ol>
+                    <li><input type="text" size=75 /></li>
+                    <li><input type="text" size=75 /></li>
+                    <li><input type="text" size=75 /></li>
+                </ul>
+            </div>
+            <p class="sub">press <span id="change-today" class="bold">enter</span> to continue or to skip (it's okay to skip!)</p>
+        </div>
+        <div id="negative" class="hidden">
+            <h2>POS+</h2>
+            <h1>What was difficult about today?</h1>
+            <p class="sub">(<span id="help" class="bold underline">click here</span> to talk to someone about it)</p>
+            <textarea rows=10 cols=100></textarea>
+            <p class="sub">press <span id="positive" class="bold">enter</span> to continue or skip question</p>
+        </div>
+        <div id="talk" class="hidden">
+            <h2>POS+</h2>
+            <h1>Hey Jenny, <br />we are here to <span class="underline">listen</span>.</h1>
+            <div id="chat">
+                <div id="chat-content"></div>
+                <input id="chat-input" type="text" placeholder="type here"/>
+                <button id="chat-bttn">ENTER</button>
+            </div>
+            <p class="sub"><span id="back" class="underline bold">go back</span> to my journal</p>
+        </div>
+        <div id="main" class="hidden">
+            <h2 id="app-title">POS+</h2>
+            <div id="today">
+                <h1>JAN 13</h1>
+                <div id="journal-entry">
+                    <h2>+ my positive occurrences</h2>
+                    <ol id="positive-occurrences"></ol>
+                    <h2>- my struggles</h2>
+                    <p id="struggle-occurrence"></p>
+                    <p class="mood" ><img class="emoji" src="happy.png" alt="happy.png" /></p>
+                </div>
+                <div id="history">
+                    <p class="bold">JANUARY:</p>
+                </div>
+            </div>
+            <div id="week" class="hidden">
+                <h1>My Week</h1>
+                <p class="sub">(see all the <span class="bold">positive events</span> that occurred below)</p>
+                <div class="day" id="sat">
+                    <h2>SAT</h2>
+                    <p>jan 13</p>
+                    <ol>
+                        <li>I met up with Jessica (an old friend)</li>
+                        <li>A person let me cut in front of her for food</li>
+                        <li>I ate at Musashi's... yummy</li>
+                    </ol>
+                    <p class="struggles hidden"><span class="bold underline"I>My struggles:</span> I got a bad grade today. I don't know if I'll get in my major.</p>
+                    <p class="mood" ><img class="emoji" src="happy.png" alt="happy.png" /></p>
+                </div>
+                <p class="sub">(<span id="show-struggle" class="bold">click here</span> to see what you struggled with)</p>
+            </div>
+            <div id="about" class="hidden">
+                <h1>about</h1>
+                <p>
+                    POS+ is both an online journal website and mobile application created to promote wellness.
+                    POS+ believes that everyone deserves good mental health, and we hope to achieve that by
+                    giving an opportunity to individuals with mental illness to practice to discover ways to
+                    find positive moments in their lives. Not only that, but we believe everyone deserves a
+                    support system. That's why we've implemented a chat feature to this product. When individuals
+                    are having a bad day they are able to reach out for help.
+                </p>
+                <h2>+ developing POS+:</h2>
+                <p class="mood"><img id="team-photo" src="winfo-team.jpg" alt="team-photo" /></p>
+            </div>
+            <div id="nav">
+                <p id="open" class="nav-button">+</p>
+                <p id="close" class="nav-button hidden">-</p>
+                <ul id="nav-list" class="hidden">
+                    <li>today</li>
+                    <li>my week</li>
+                    <li>about POS+</li>
+                </ul>
+            </div>
+            <div id="footer">
+                
+            </div>
+        </div>
+    </body>
+</html>

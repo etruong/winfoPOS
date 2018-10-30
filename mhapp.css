@@ -1,0 +1,186 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+body > div {
+    margin-top: 10%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.sub {
+    font-size: small;
+}
+
+#sign-in fieldset{
+    border: none;
+}
+
+#sign-in button {
+    background-color: lightblue;
+}
+
+#sign-in button, #chat-bttn {
+    font-family: sans-serif;
+    width: 60px;
+    padding: 5px;
+    border-radius: 1px;
+    border: 3px solid black;
+    vertical-align: bottom;
+}
+
+#sign-in input {
+    background-color: lightblue;
+}
+
+#sign-in {
+    margin-top: 20%;
+}
+
+input, #chat-input {
+    width: 200px;
+    height: 20px;
+    font-size: large;
+    padding: 3px;
+}
+
+textarea {
+    font-size: medium;
+}
+
+input, #chat-input, textarea {
+    border: 3px solid black;
+    color: black;
+}
+
+#emotion-stickers > img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#emotion-stickers > img:hover {
+    cursor: pointer;
+}
+
+#chat-content {
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    border: 3px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.day ol, #positive-events ol {
+    list-style-position: inside;
+}
+
+#positive-events ol {
+    font-size: larger;
+}
+
+#positive-events input {
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+#positive-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#history {
+    position: fixed;
+    bottom: 5px;
+}
+
+#history p {
+    display: inline;
+}
+
+.num:hover, #nav li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    text-align: left;
+    padding: 10px;
+}
+
+#nav ul {
+    list-style-type: none;
+}
+
+.nav-button {
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.day {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.day ol {
+    list-style-position:inside;
+}
+
+#about p, .day, #journal-entry {
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.emoji {
+    width: 20px;
+    height: 20px;
+}
+
+.mood {
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#team-photo {
+    max-width: 200px;
+}
